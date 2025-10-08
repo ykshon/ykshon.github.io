@@ -222,12 +222,12 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: 600;          /* 조금 두껍게 */
-  color: #2ecc71;            /* 초록색 (emerald green) */
+  color: #099973;            /* 초록색 (emerald green) */
   transition: color 0.2s;
 }
 
 nav a:hover {
-  color: #27ae60;            /* hover 시 진한 초록 */
+  color: #573bbe;            /* hover 시 진한 초록 */
   text-decoration: underline;
 }
 
@@ -302,18 +302,19 @@ nav a:hover {
 
 .pdf-btn {
   display: inline-block;
-  padding: 8px 14px;
+  padding: 4px 8px;
   margin-top: 10px;
-  background: #2ecc71;
+  background: #6a74ce;
   color: white;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;         /* 살짝 얇게 */
+  font-size: 0.85rem;       /* ← 글자 크기도 약간 줄임 */
   transition: background 0.2s;
 }
 
 .pdf-btn:hover {
-  background: #27ae60;
+  background: #573bbe;
 }
 
  
@@ -327,7 +328,7 @@ footer {
 }
 
 footer a {
-  color: #2ecc71;
+  color: #099973;
   text-decoration: none;
   margin: 0 8px;
 }

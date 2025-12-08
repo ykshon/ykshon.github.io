@@ -36,7 +36,15 @@ header h1 {
     display: flex;
     gap: 50px;
     align-items: flex-start;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+}
+
+.hero-content .name-note {
+  margin-top: -2px;
+  margin-bottom: 30px; 
+  font-size: 16px;
+  color: #666;
+  font-style: italic;  
 }
 
 .profile-img {
@@ -55,7 +63,7 @@ header h1 {
     font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     letter-spacing: -1px;
 }
 
@@ -79,6 +87,12 @@ section h3 {
     font-weight: normal;
 }
 
+
+.about {
+  margin-top: 40px;   
+  margin-bottom: 40px;
+}
+
 section p {
     font-size: 16px;
     line-height: 1.8;
@@ -91,7 +105,7 @@ section p {
     background-color: white;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
-    margin: 80px 0;
+    margin: 20px 0 20px; 
 }
 
 .contact p {
@@ -244,9 +258,15 @@ nav a:hover {
 }
 
 
+
 .gallery {
-  max-width: 1000px;
-  margin: 60px auto;
+  margin-top: 20px;
+}
+
+
+.gallery {
+  max-width: 1000%;
+  margin: 30px auto;
   padding: 20px;
 }
 
@@ -258,17 +278,17 @@ nav a:hover {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
 }
 
 .gallery-grid img {
-  width: 100%;
-  height: 220px;       /* 원하는 높이로 고정 */
-  object-fit: cover;   /* 비율 유지 + 꽉 차게 잘라줌 */
-  border-radius: 8px;
+  width: 80%;
+  height: 400px;          
+  object-fit: cover;     
+  border-radius: 10px;
+  display: block;
 }
-
 
 .gallery-grid img:hover {
   transform: scale(1.05);
@@ -281,7 +301,7 @@ nav a:hover {
   gap: 20px;
   align-items: flex-start;
   margin-bottom: 50px;
-  flex-wrap: wrap; /* 모바일 대응 */
+  flex-wrap: wrap; 
 }
 
 .project-pdf iframe {

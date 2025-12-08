@@ -265,7 +265,7 @@ nav a:hover {
 
 
 .gallery {
-  max-width: 1200px;
+  max-width: 1000%;
   margin: 30px auto;
   padding: 20px;
 }
@@ -283,13 +283,14 @@ nav a:hover {
 }
 
 .gallery-grid img {
-  width: 100%;      /* 칸에 꽉 차게 변경 */
-  height: 500px;    /* 높이를 줄여서 이미지가 덜 깨지게 함 */
-  object-fit: cover;
+  width: 80%;       /* 칸 너비에 맞추기 */
+  height: auto;      /* 비율 유지 */
+  object-fit: contain;  /* 또는 아예 지워도 됨 */
   border-radius: 10px;
   display: block;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* 살짝 그림자 추가해서 고급스럽게 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
 
 .gallery-grid img:hover {
   transform: scale(1.05);
